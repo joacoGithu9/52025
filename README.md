@@ -4,13 +4,21 @@
  Leer un nombre desde el teclado
  Llamar a una función que imprime "Hola, " seguido del nombre ingresado
 
-  ## Características de la Gramática
-- **Variables**: Identificadores alfanuméricos (`a`, `var_1`)
-- **Números**: Enteros positivos (`10`, `123`)
-- **Strings**: Delimitados por `v` (`vHolaMundov`)
-- **Operadores**: `+`, `-`, `*`, `/`
-- **Estructuras**: `switch-case-default`
-- **Salida**: `console.log()`
+  ## Componentes de la Gramática
+
+  1. <programa>	     Un conjunto de funciones.
+  2. <funcion>	      Declaración de función con nombre, parámetros y un bloque de instrucciones.
+  3. <parametros>	   Lista de identificadores separados por comas.
+  4. <instrucciones>	Lista de instrucciones como leer, escribir o asignacion.
+  5. <leer>	         Entrada de datos por consola.
+  6. <escribir>	     Salida de datos.
+  7. <asignacion>	   Asignación de valores a variables.
+  8. <expresion>	    Puede ser un número, una cadena o un identificador (variable).
+  9. <identificador>	Letras y guiones bajos, similar a los nombres de variables en C/Python.
+  10.<numero>	       Enteros positivos.
+  11. <cadena>	       Texto entre comillas dobles.
+
+
   ## Requisitos
 1. Node.js (v16+)
 2. npm (incluido con Node.js)
