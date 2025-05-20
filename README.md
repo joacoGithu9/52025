@@ -25,22 +25,15 @@ Estas instrucciones se pueden ejecutar en cualquiera de los siguientes entornos 
 
 1. Primero clonamos el repositorio dentro de una carpeta cualquiera (en el caso del ejemplo una llamada "prueba"):
 
-    git clone https://github.com/AlejoPacheco52072/52072.git
+    git clone https://github.com/joacoGithu9/52025.git
 
 2. Después nos dirigimos al directorio del proyecto:
 
-     cd 52072
+     cd 52025
 
 3. Y por ultimo abrimos el visual studio para trabajar con el comando:
 
     code . (<---- no olvidar el punto, es importante sin el nos abrira visual studio sin los archivos clonados)
 
 ![image](https://github.com/user-attachments/assets/40b5439b-9087-4492-ae48-5ba85b56ed58) (ejemplo en GITBASH)
-
-En caso de no seleccionar una carpeta nueva y clonar el repositorio dentro de la misma como en el ejemplo, normalmente el proyecto se encontrara dentro de la carpeta "C:\Users\(usuario en cuestión)" del usuario que lo este ejecutando.
-
-EJ: 
-
-![image](https://github.com/user-attachments/assets/8b5e164f-fd41-46a3-ae41-c5cd52802d82) (ejemplo en CMD)
-
-si bien es "distinto" el proceso es el mismo
+ 
