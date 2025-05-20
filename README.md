@@ -1,59 +1,46 @@
 # Analizador de Gramática
- Herramienta para analizar código según la gramática, implementada con ANTLR4.
- La  función de este analizador es ser una especie de programa de saludo personalizado:
- Leer un nombre desde el teclado
- Llamar a una función que imprime "Hola, " seguido del nombre ingresado
 
-  ## Componentes de la Gramática
-
-  1. <programa>	     Un conjunto de funciones.
-  2. <funcion>	      Declaración de función con nombre, parámetros y un bloque de instrucciones.
-  3. <parametros>	   Lista de identificadores separados por comas.
-  4. <instrucciones>	Lista de instrucciones como leer, escribir o asignacion.
-  5. <leer>	         Entrada de datos por consola.
-  6. <escribir>	     Salida de datos.
-  7. <asignacion>	   Asignación de valores a variables.
-  8. <expresion>	    Puede ser un número, una cadena o un identificador (variable).
-  9. <identificador>	Letras y guiones bajos, similar a los nombres de variables en C/Python.
-  10.<numero>	       Enteros positivos.
-  11. <cadena>	       Texto entre comillas dobles.
-
+La gramática es un mini‑lenguaje imperativo muy sencillo, pensado para ilustrar el flujo completo de compilador/interprete (lexing → parsing → AST → codegen → ejecución).
 
   ## Requisitos
-1. Node.js (v16+)
-2. npm (incluido con Node.js)
-3. Java Runtime (JRE) para ANTLR4
-4. Visual Studio
- ## Configuración de inicio
-   En una ventana de comandos ( cmd o powershell):
-   1. Clonar el repositorio:
-      DEJO ESPACIO LA CONCHA DE DIOS
-   2. Entro al director donde se encuentra el proyecto:
-       cd 52025
-   3. Abre VS (Visual Studio) Code para trabajar con el código del proyecto
-       code.
-      ACÁ VA ALGO
-   4. Debería estar dentro de VS con el proyecto abierto
-   5. # Uso Básico
-   1. Modificar el input
-       ACÁ VA ALGO
-   Editar el archivo input.txt con tu código
-   Así debería quedar:
-       ACÁ VA ALGO
-   2. Ejecutar el analizador en la terminal de VS node index.js
-       ACÁ VA ALGO
-      El programa mostrará:
-   1.Tabla de tokens/lexemas
-
-   2.Árbol de derivación
-
-   3.Los resultados que devuelve dados por el intérprete
-
-   4.Errores de sintaxis (si existen)
-
-Ejemplo de como debería salir: 
-   ACÁ VA ALGO
-   Puse estos ejemplos, ya que mi tema no tiene ejemplos para probar.
-        ACÁ VA ALGO
-    
+  
+1. Node.js (v16+) desde la página oficial https://nodejs.org/es
    
+2. Java Runtime (JRE) para ANTLR4, la version utilizada para el desarrolo de este proyecto es "java version "24.0.1" 2025-04-15" (recomendada para su ejecuccion)
+   
+3. Descargar Visual Studio Code https://code.visualstudio.com/
+   
+4. Descargar e instalar Git desde la página oficial https://git-scm.com/downloads
+
+## Configuracion Inicial
+
+Estas instrucciones se pueden ejecutar en cualquiera de los siguientes entornos de línea de comandos:
+
+- **Windows PowerShell**
+- **Símbolo del sistema (CMD) en Windows**
+- **GitBash**
+- **ETC**
+  
+### Pasos
+
+1. Primero clonamos el repositorio dentro de una carpeta cualquiera (en el caso del ejemplo una llamada "prueba"):
+
+    git clone https://github.com/AlejoPacheco52072/52072.git
+
+2. Después nos dirigimos al directorio del proyecto:
+
+     cd 52072
+
+3. Y por ultimo abrimos el visual studio para trabajar con el comando:
+
+    code . (<---- no olvidar el punto, es importante sin el nos abrira visual studio sin los archivos clonados)
+
+![image](https://github.com/user-attachments/assets/40b5439b-9087-4492-ae48-5ba85b56ed58) (ejemplo en GITBASH)
+
+En caso de no seleccionar una carpeta nueva y clonar el repositorio dentro de la misma como en el ejemplo, normalmente el proyecto se encontrara dentro de la carpeta "C:\Users\(usuario en cuestión)" del usuario que lo este ejecutando.
+
+EJ: 
+
+![image](https://github.com/user-attachments/assets/8b5e164f-fd41-46a3-ae41-c5cd52802d82) (ejemplo en CMD)
+
+si bien es "distinto" el proceso es el mismo
