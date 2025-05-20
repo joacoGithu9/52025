@@ -11,6 +11,8 @@ La gramática es un mini‑lenguaje imperativo muy sencillo, pensado para ilustr
 3. Descargar Visual Studio Code https://code.visualstudio.com/
    
 4. Descargar e instalar Git desde la página oficial https://git-scm.com/downloads
+   
+---
 
 ## Configuracion Inicial
 
@@ -57,36 +59,27 @@ Contamos con 4 ejemplos, (2 correctos, 2 incorrectos dentro de la misma carpeta)
 
 El resultado en un ejemplo correcto deberia verse como la imagen pasada
 
-![image](https://github.com/user-attachments/assets/d67944e0-4b33-4f0a-992d-927004f12a98)
-
 En caso de tener algun error por ej el `inputs/EJINPUTINCORRECTO.txt` se nos mostrara como:
 
 ![image](https://github.com/user-attachments/assets/eb6f35f9-ad07-4d5e-8bd2-ef6b47bfa85b)
 
 mostrandonos el error al final
 
-## El programa muestra:
+## ¿Qué hace el programa?
 
--  Una tabla con los lexemas y sus respectivos tokens.
-  
--  Errores de sintaxis, si los hubiera, con línea y descripción.
-  
--  El árbol de análisis sintáctico en formato textual.
-  
--  La traducción del código fuente a JavaScript.
-  
--  La ejecución del código traducido en consola.
-  
- (El sistema valida la sintaxis, genera una tabla de tokens, construye y muestra el árbol de análisis sintáctico, y finalmente traduce el código fuente a JavaScript para interpretarlo y ejecutar su lógica.)
+1. **Análisis léxico y sintáctico**  
+   Se analiza el código fuente (desde `input.txt`) y se informa si es válido o contiene errores. Si hay errores, se muestra la línea y la causa.
 
+2. **Tabla de lexemas-tokens**  
+   Se imprime una tabla con todos los lexemas detectados y su tipo de token correspondiente (por ejemplo: identificadores, palabras clave, símbolos, literales, etc.).
 
-  ---
+3. **Árbol de análisis sintáctico (AST)**  
+   Se construye e imprime una representación jerárquica de la estructura del código fuente. Este árbol permite visualizar cómo está compuesto el programa según las reglas gramaticales.
 
-## Comentarios Finales
+4. **Interpretación y traducción a JavaScript**  
+   El programa traduce el código fuente escrito en GraLang a código JavaScript equivalente, y luego lo ejecuta directamente en consola, permitiendo entradas por teclado y mostrando salidas.
 
-Este proyecto fue desarrollado para la materia de Sintaxis y Semántica de los Lenguajes por el alumno Alejo Pacheco (legajo 52072)
+---
 
-El repositorio contiene los archivos necesarios para compilar y ejecutar el proyecto, junto con pasos que nos permiten la correcta ejeccucion del mismo.
-
-Gracias por su tiempo. 🙂
+Este proyecto fue realizado para la materia Sintaxis y Semantica de los lenguajes por el alumno Joaquin Mansilla (Legajo 52025)
 
