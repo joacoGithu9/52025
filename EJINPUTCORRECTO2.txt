@@ -1,0 +1,7 @@
+funcion calculo() {
+  leer(x);
+  leer(y);
+  resultado = x;
+  escribir(resultado);
+  escribir("¡Listo!");
+}

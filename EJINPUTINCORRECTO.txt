@@ -1,0 +1,3 @@
+funcion ejemplo(valor) {
+  if (valor) { escribir(valor); }   // ERROR: la gramática no incluye ninguna regla para 'if'
+}

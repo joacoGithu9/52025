@@ -1,0 +1,83 @@
+Gramatica asignada:
+
+<programa> ::= {<funcion>}+
+
+<funcion> ::= "funcion" <identificador> "(" [<parametros>] ")" "{" [<instrucciones>] "}"
+
+<parametros> ::= <identificador> {"," <identificador>}
+
+<instrucciones> ::= {<leer> | <escribir> | <asignacion>}*
+
+<leer> ::= "leer" "(" <identificador> ")" ";"
+
+<escribir> ::= "escribir" "(" <expresion> ")" ";"
+
+<asignacion> ::= <identificador> "=" <expresion> ";"
+
+<expresion> ::= <numero> | <cadena> | <identificador>
+
+<identificador> ::= [a-zA-Z_] [a-zA-Z0-9_]*
+
+<numero> ::= [0-9]+
+
+<cadena> ::= "\"" [^\"]* "\""
+
+Gramatica .g4:
+
+programa
+    : funcion+ EOF
+    ;
+
+funcion
+    : 'funcion' IDENTIFICADOR '(' parametros? ')' '{' instrucciones '}'  // <-- sin “?”
+    ;
+
+parametros
+    : IDENTIFICADOR (',' IDENTIFICADOR)*
+    ;
+
+instrucciones
+    : (leer | escribir | asignacion)*   // ya admite vacío
+    ;
+
+leer
+    : 'leer' '(' IDENTIFICADOR ')' ';'
+    ;
+
+escribir
+    : 'escribir' '(' expresion ')' ';'
+    ;
+
+asignacion
+    : IDENTIFICADOR '=' expresion ';'
+    ;
+
+expresion
+    : NUMERO
+    | CADENA
+    | IDENTIFICADOR
+    ;
+
+IDENTIFICADOR 
+    : [a-zA-Z_] [a-zA-Z0-9_]*
+    ;
+
+NUMERO
+    : [0-9]+
+    ;
+
+CADENA
+    : '"' (~["\r\n])* '"'
+    ;
+
+WS
+    : [ \t\r\n]+ -> skip
+    ;
+
+LINE_COMMENT
+    : '//' ~[\r\n]* -> skip
+    ;
+
+BLOCK_COMMENT
+    : '/*' .*? '*/' -> skip
+    ;
