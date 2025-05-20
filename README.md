@@ -35,5 +35,6 @@ Estas instrucciones se pueden ejecutar en cualquiera de los siguientes entornos 
 
     code . (<---- no olvidar el punto, es importante sin el nos abrira visual studio sin los archivos clonados)
 
-![image](https://github.com/user-attachments/assets/40b5439b-9087-4492-ae48-5ba85b56ed58) (ejemplo en GITBASH)
+![image](https://github.com/user-attachments/assets/8cf45251-a842-4aee-8188-1c0f833b4f64) 
+
  
